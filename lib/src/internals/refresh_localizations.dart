@@ -80,6 +80,7 @@ class RefreshLocalizations {
     'sv': SvRefreshString(),
     'pt': PtRefreshString(),
     'ko': KrRefreshString(),
+    'ar': ArRefreshString(),
   };
 
   RefreshString? get currentLocalization {
@@ -634,4 +635,39 @@ class KrRefreshString implements RefreshString {
 
   @override
   String? refreshingText = "새로 고침 중…";
+}
+
+class ArRefreshString implements RefreshString {
+  @override
+  String? canLoadingText = "حرر للتحميل المزيد";
+
+  @override
+  String? canRefreshText = "حرر للتحديث";
+
+  @override
+  String? canTwoLevelText = "حرر للانتقال إلى الطابق الثاني";
+
+  @override
+  String? idleLoadingText = "اسحب للتحميل المزيد";
+
+  @override
+  String? idleRefreshText = "اسحب للتحديث";
+
+  @override
+  String? loadFailedText = "فشل التحميل";
+
+  @override
+  String? loadingText = "جاري التحميل...";
+
+  @override
+  String? noMoreText = "لا توجد بيانات إضافية";
+
+  @override
+  String? refreshCompleteText = "تم التحديث بنجاح";
+
+  @override
+  String? refreshFailedText = "فشل التحديث";
+
+  @override
+  String? refreshingText = "جاري التحديث...";
 }
